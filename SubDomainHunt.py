@@ -5,10 +5,10 @@ total = len(sys.argv)
 cmdargs = str(sys.argv)
 print ("The total numbers of args passed to the script: %d " % total)
 print ("Args list: %s " % cmdargs)
-topnumber = sys.argv[1]
+topnumber = sys.argv[2]
 ##top number as of midnight 28th feb 2015 is 3542090
 found = 0
-currentnumber = sys.argv[0]
+currentnumber = sys.argv[1]
 stnumber = format(currentnumber)
 while currentnumber <= topnumber:
     checked = format(currentnumber)
