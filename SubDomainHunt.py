@@ -1,10 +1,10 @@
 import os, requests, time, sys
 from os import path
 ##credit for the code goes to https://github.com/HarryC145/
-topnumber = int(sys.argv[1])
+topnumber = sys.argv[1]
 ##top number as of midnight 28th feb 2015 is 3542090
 found = 0
-currentnumber = int(sys.argv[0])
+currentnumber = sys.argv[0]
 stnumber = format(currentnumber)
 while currentnumber <= topnumber:
     checked = format(currentnumber)
