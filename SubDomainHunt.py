@@ -1,4 +1,4 @@
-import os, requests, sys
+import os, requests, time, sys
 from os import path
 ##credit for the code goes to https://github.com/HarryC145/
 topnumber = 3542090
@@ -17,9 +17,11 @@ while currentnumber <= topnumber:
         print('I found a site, at', url)
         found = found + 1
         print(found)
+        time.sleep(0.25)
     else:
         print('I looked for a site at', url, 'and I did not see anything')
         notfound = open("notfound.txt", "a")
         notfound.write(url + '\n')
         notfound.close()
+        time.sleep(0.5)
     currentnumber = currentnumber + 1
