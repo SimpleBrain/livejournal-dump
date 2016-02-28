@@ -8,7 +8,7 @@ print ("Args list: %s " % cmdargs)
 topnumber = sys.argv[2]
 ##top number as of midnight 28th feb 2015 is 3542090
 found = 0
-currentnumber = sys.argv[1]
+currentnumber = int(sys.argv[1])
 stnumber = format(currentnumber)
 while currentnumber <= topnumber:
     checked = format(currentnumber)
