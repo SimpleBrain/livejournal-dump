@@ -1,10 +1,10 @@
 import os, requests, time, sys
 from os import path
 ##credit for the code goes to https://github.com/HarryC145/
-topnumber = 20
+topnumber = 6999999
 ##top number as of midnight 28th feb 2015 is roughly 77536449
 found = 0
-currentnumber = 1
+currentnumber = 3000000
 stnumber = format(currentnumber)
 while currentnumber <= topnumber:
     checked = format(currentnumber)
@@ -18,11 +18,11 @@ while currentnumber <= topnumber:
         SitePresent.close()
         print(format(found) +  "/" + checked + " (200) Site found: " + url)
         found = found + 1
-        time.sleep(0.75)
+        time.sleep(1.5)
     else:
         print(stcode + " Error " +  url + " Not there")
         notfound = open("Profile-notfound-" + stnumber + "-" + format(topnumber) + ".txt", "a")
         notfound.write(url + '\n')
         notfound.close()
-        time.sleep(1)
+        time.sleep(3)
     currentnumber = currentnumber + 1
