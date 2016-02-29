@@ -14,3 +14,8 @@ Current test shows if you grab 1 per 2 seconds, you wont get banned. Please adju
 
 Use the following command to run:
 python SubDomainhunt.py startnumber endnumber
+
+# ProfileChecker.py - soon
+
+Use the following command to run:
+python ProfileChecker.py startnumber endnumber
