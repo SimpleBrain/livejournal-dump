@@ -1,7 +1,7 @@
 import os, requests, time, sys
 from os import path
 ##credit for the code goes to https://github.com/HarryC145/
-topnumber = 20
+topnumber = 1000000
 ##top number as of midnight 28th feb 2015 is roughly 77536449
 found = 0
 currentnumber = 1
