@@ -1,10 +1,21 @@
 import os, requests, time, sys
 from os import path
 ##credit for the code goes to https://github.com/HarryC145/
+<<<<<<< HEAD
 topnumber = 6999999
 ##top number as of midnight 28th feb 2015 is roughly 77536449
 found = 0
 currentnumber = 3000000
+=======
+total = len(sys.argv)
+cmdargs = str(sys.argv)
+print ("The total numbers of args passed to the script: %d " % total)
+print ("Args list: %s " % cmdargs)
+topnumber = sys.argv[2]
+##top number as of midnight 28th feb 2015 is roughly 77536449
+found = 0
+currentnumber = int(sys.argv[1])
+>>>>>>> 45132f770053d1c3f14f0647e6aa15575ed17289
 stnumber = format(currentnumber)
 while currentnumber <= topnumber:
     checked = format(currentnumber)
